@@ -1,0 +1,125 @@
+html, body{
+    margin : 0 ; 
+    padding : 0 ; 
+    width : 100% ; 
+    height: 100% ;
+
+}
+
+#entete{
+    margin : 0 ; 
+    padding : 0 ; 
+    width : 100% ; 
+    height: 50% ;
+    position: relative ; 
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 1; 
+}
+    #img_entete{
+    left : 0 ;
+    width : 100%;
+    height : 100%;
+    position : absolute ;
+    z-index : 0 ;
+  
+    object-position : center   
+}
+    
+
+#nomsite{
+    font-size: 5vw ;
+    position: relative;
+    text-align: center;
+    padding: 1% ;
+    color: darkcyan;
+    -webkit-text-stroke: 0.1vw cornflowerblue;
+    text-transform: uppercase;
+}
+#nomsite::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: cyan;
+    -webkit-text-stroke: 0.1vw cornflowerblue;
+    border-right: 2px solid cyan;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+
+
+
+}
+p{
+    height: 50px;
+}
+@keyframes animate {
+    0%,10%,100%
+    {
+            width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+    #formauto{      
+        position: relative;
+        border: 1px solid #fff;
+        border-left: none; border-right: none;
+        background-color:rgba(000, 000, 000, 0.2);
+        margin-left: auto; margin-right: auto;
+        width: 70%;min-height: 10%;
+        text-align: center;
+        padding: 2%;
+        text-decoration-color: aliceblue;
+    }
+    
+#container{
+    width:400px ;
+    margin: 0 auto ;
+    margin-top: 50px;
+}
+
+#container h1{
+width: 38%;
+margin: 0 auto;
+padding-bottom: 10px ;  
+color: #f30;
+font-style: italic  ;
+} 
+
+#formulaire{
+    width: 100%;
+    padding: 30px;
+    border : 5px solid #f1f1f1;
+    background-color: bisque;
+    box-shadow: 0 0 20px 0 regb(0,0,0,0.2),0 5px 5px 0 regb(0,0,0,0.25)  ;
+    text-align: center;
+}
+#zonetext{
+    background-color:white;
+    color: black;
+    padding: 14px 20px ;
+    margin: 8px 0;
+    border-color: chocolate;
+    cursor: pointer;
+    width: 80%;
+
+}
+#submit{
+    background-color: #f30;
+    color: white;
+    padding: 14px 20px ;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+#container .submit:hover{
+ background-color: white ;
+ color: #f30;
+ border: 1px solid #f30;
+}

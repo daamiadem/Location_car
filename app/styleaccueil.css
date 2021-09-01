@@ -1,0 +1,161 @@
+html, body{
+    margin : 0 ; 
+    padding : 0 ; 
+    width : 100% ; 
+    height: 100% ;
+
+}
+
+#entete{
+    margin : 0 ; 
+    padding : 0 ; 
+    width : 100% ; 
+    height: 50% ;
+    position: relative ; 
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 1; 
+}
+    #img_entete{
+    left : 0 ;
+    width : 100%;
+    height : 100%;
+    position : absolute ;
+    z-index : 0 ;
+  
+    object-position : center   
+}
+    
+
+#nomsite{
+    font-size: 5vw ;
+    position: relative;
+    text-align: center;
+    padding: 1% ;
+    color: darkcyan;
+    -webkit-text-stroke: 0.1vw cornflowerblue;
+    text-transform: uppercase;
+}
+#nomsite::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: cyan;
+    -webkit-text-stroke: 0.1vw cornflowerblue;
+    border-right: 2px solid cyan;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+
+
+
+}
+
+@keyframes animate {
+    0%,10%,100%
+    {
+            width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+    #formauto{
+        position: relative;
+        border: 1px solid #fff;
+        border-left: none; border-right: none;
+        background-color:rgba(000, 000, 000, 0.2);
+        margin-left: auto; margin-right: auto;
+        width: 70%;min-height: 10%;
+        text-align: center;
+        padding: 2%;
+        text-decoration-color: aliceblue;
+    }
+    p{
+        height: 50px;
+    }
+    #auto{
+        border: 1px solid #999;
+        width: 150;
+        min-height: 200px;
+        margin: 10px;
+        margin-top: 50px;
+        margin-right: 30px;
+        padding-left: 20px ;
+        padding-right: 20px ;
+        float:left;
+        position: relative;
+        padding-top: 20px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    
+    #imageauto{
+        border-radius: 20px;
+    }
+    #glob{
+        width: 100%;
+        padding: 5px;
+        margin: 10px;
+    }
+    #glob #profil{
+width: 20%;
+padding: 10px;
+vertical-align: middle;
+text-align: center;
+min-height: 100px;
+display: inline-block;
+border: 2px solid #f1f1f1;
+background-color:antiquewhite;
+box-shadow: 0 0 20px 0 regb(0,0,0,0.2),0 5px 5px 0 regb(0,0,0,0.25) ;
+    }
+    #glob #tableaubord{
+        box-shadow: 0 0 20px 0 regb(0,0,0,0.2),0 5px 5px 0 regb(0,0,0,0.25) ;
+        min-height:100px ;
+        display: inline-block;
+        border: 2px solid #f1f1f1;
+        background-color: antiquewhite;
+        width: 70%;
+        padding: 20px;
+        margin: 5px;
+        vertical-align: middle;
+    }
+    table{
+        caption-side: bottom;
+
+    }
+    th,td{
+       
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+
+    }
+    th{
+      
+        background-color: #f30;
+        padding: 10px;
+    }
+    .photocar{
+        width: 130px;
+        height: 100px;
+        border-radius: 5%;
+        border: 1px solid;
+    }
+    #entete .login{
+        opacity : 1 ; 
+        padding: 14px 20px ;
+        margin: 8px 10px ;
+        
+        cursor: pointer;
+        position: relative;
+        
+        z-index: 10;
+       
+        
+    
+    }

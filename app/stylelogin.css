@@ -1,0 +1,71 @@
+/*----------------------page de login--------------------------*/
+
+#container{
+    width:400px ;
+    margin: 0 auto ;
+    margin-top: 10%;
+}
+p{
+    height: 50px;
+}
+#container h1{
+width: 38%;
+margin: 0 auto;
+padding-bottom: 10px ;  
+color: #f30;
+font-style: italic  ;
+} 
+
+#formulaire{
+    width: 100%;
+    padding: 0px;
+    border : 5px solid #f1f1f1;
+    background-color: bisque;
+    box-shadow: 0 0 20px 0 regb(0,0,0,0.2),0 5px 5px 0 regb(0,0,0,0.25)  ;
+    text-align: center;
+    overflow: hidden;
+}
+#zonetext{
+    background-color:white;
+    color: black;
+    padding: 14px 20px ;
+    margin: 8px 0;
+    border-color: chocolate;
+    cursor: pointer;
+    width: 80%;
+
+}
+#submit{
+    background-color: #f30;
+    color: white;
+    padding: 14px 20px ;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+#container .submit:hover{
+ background-color: white ;
+ color: #f30;
+ border: 1px solid #f30;
+}
+
+#nvc{
+    opacity : 1 ; 
+    background-color: #f30;
+    color: white;
+    padding: 14px 20px ;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    z-index: 10;
+}   
+
+
+#nvc:hover{
+    opacity: 1;
+    background-color: white ;
+    color: #f30;
+    border: 1px solid #f30;
+}
